@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex-Recreate</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Expense Tracker</h1>
+
+      <div class="balance-container">
+        <h2>Your Balance</h2>
+        <div id="balance">&#8377;1000</div>
+      </div>
+      <div class="cashflow-container">
+        <div class="income-container">
+          <h2>Income</h2>
+          <div id="income">&#8377;1200</div>
+        </div>
+        <div class="expense-container">
+          <h2>Expense</h2>
+          <div id="expense">&#8377;500</div>
+        </div>
+      </div>
+      <div class="transaction-container">
+        <h2>Transaction History</h2>
+        <ul id="transaction">
+   <!-- <li>Salary
+      <div>
+  <span class='expense-amt'>&#8377;500</span><button>X</button>
+</div>
+</li> -->
+        </ul>
+      </div>
+      <div class="form-container">
+        <h2>Add New Transaction</h2>
+        <form onsubmit="return false">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+          <label for="amount">Amount</label>
+          <input id="amount" type="number" />
+          <button id="incomeBtn">Add Income</button>
+          <button id="expenseBtn">Add Expense</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
